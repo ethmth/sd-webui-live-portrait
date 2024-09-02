@@ -343,7 +343,7 @@ def on_ui_tabs():
                                 driving_image_webcam_input = gr.Image(type="filepath")
                         with gr.TabItem("📁 Driving Pickle") as v_tab_pickle:
                             with gr.Accordion(open=True, label="Driving Pickle"):
-                                driving_video_pickle_input = gr.File(type="file", file_types=[".pkl"])
+                                driving_video_pickle_input = gr.File(type="binary", file_types=[".pkl"])
                                 gr.Examples(
                                     examples=[
                                         [osp.join(example_video_dir, "d1.pkl")],
